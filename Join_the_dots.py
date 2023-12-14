@@ -88,13 +88,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('mp3tovec', type=str, help='MP3ToVecs file (full path)')
     parser.add_argument('--inputs', type=str, help='Text file with list of songs')
-    parser.add_argument('output', type=str, help='Output MP3 filename')
+    parser.add_argument('output', type=str, help='Output m3u filename')
     parser.add_argument('n', type=int, help='Number of songs to add between input songs')
     parser.add_argument('--noise', type=float, help='Degree of randomness (0-1)')
     args = parser.parse_args()
     mp3tovec_filename = args.mp3tovec
     tracks_filename = args.inputs
-    mix_filename = args.output
+    playlist_filename = args.output
     n = args.n
     mp3tovec = pickle.load(open(mp3tovec_filename, 'rb'))
     mp3_vec_j_norms = {} # precalculate norms for mp3_vec_j
@@ -137,25 +137,32 @@ if __name__ == '__main__':
     else:
         playlist = make_playlist(input_tracks, size=n, lookback=3, noise=noise)
     tracks = []
+    m3u_op_tracks = []
     for i, track in enumerate(playlist):
         tracks.append('-i')
         tracks.append(track)
+        m3u_op_tracks.append(track)
         total_duration += get_track_duration(track)
         if n == 0 and i == 0 or n != 0 and i % (n+1) == 0:
             print(f'{i+1}.* {track}')
         else:
             print(f'{i+1}. {track}')
+
+    # Open a file
+    with open(playlist_filename, 'w') as file:
+        file.write("\n".join(m3u_op_tracks))
+
     print(f'Total duration = {total_duration//60//60:.0f}:{total_duration//60%60:02.0f}:{total_duration%60:02.0f}s')
     print('')
-    print(f'Creating mix {mix_filename}')
-    pipe = sp.Popen(['ffmpeg',
-                    '-y', # replace if exists
-                    '-i', 'static/meta_data.txt'] + # use this meta data
-                    tracks + # append playlist tracks
-                    ['-filter_complex', f'loudnorm=I=-14,concat=n={len(playlist)}:v=0:a=1[out]', # normalize and concatenate
-                    '-map', '[out]', # final output
-                    mix_filename], # output file
-                   stdin=sp.PIPE,stdout=sp.PIPE, stderr=sp.PIPE)
-    out, err = pipe.communicate()
-    if pipe.returncode == 1 and err is not None:
-        print (err)
+    # print(f'Creating mix {mix_filename}')
+    # pipe = sp.Popen(['ffmpeg',
+    #                 '-y', # replace if exists
+    #                 '-i', 'static/meta_data.txt'] + # use this meta data
+    #                 tracks + # append playlist tracks
+    #                 ['-filter_complex', f'loudnorm=I=-14,concat=n={len(playlist)}:v=0:a=1[out]', # normalize and concatenate
+    #                 '-map', '[out]', # final output
+    #                 mix_filename], # output file
+    #                stdin=sp.PIPE,stdout=sp.PIPE, stderr=sp.PIPE)
+    # out, err = pipe.communicate()
+    # if pipe.returncode == 1 and err is not None:
+    #     print (err)
