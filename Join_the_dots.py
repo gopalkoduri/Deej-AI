@@ -152,8 +152,8 @@ if __name__ == '__main__':
     with open(playlist_filename, 'w') as file:
         file.write("\n".join(m3u_op_tracks))
 
-    print(f'Total duration = {total_duration//60//60:.0f}:{total_duration//60%60:02.0f}:{total_duration%60:02.0f}s')
-    print('')
+    # print(f'Total duration = {total_duration//60//60:.0f}:{total_duration//60%60:02.0f}:{total_duration%60:02.0f}s')
+    # print('')
     # print(f'Creating mix {mix_filename}')
     # pipe = sp.Popen(['ffmpeg',
     #                 '-y', # replace if exists
