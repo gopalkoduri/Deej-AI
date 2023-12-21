@@ -1,0 +1,114 @@
+[
+    {
+        "sequence": 1,
+        "title": "I Knew You Were Trouble.",
+        "artist": "Taylor Swift",
+        "album": "Red",
+        "audio_filepath": "http://192.168.0.156:8000/72jCZdH0Lhg93z6Z4hBjgj.mp3"
+    },
+    {
+        "sequence": 2,
+        "title": "On My Way",
+        "artist": "Sutton Foster",
+        "album": "Violet (Original Broadway Cast Recording)",
+        "audio_filepath": "http://192.168.0.156:8000/4sDRcUthqGUgVPFh6HIftR.mp3"
+    },
+    {
+        "sequence": 3,
+        "title": "Ordinary Girl",
+        "artist": "Hannah Montana",
+        "album": "Hannah Montana Forever",
+        "audio_filepath": "http://192.168.0.156:8000/2kIq7Oq6YNfdUuTrmPC4w1.mp3"
+    },
+    {
+        "sequence": 4,
+        "title": "Never Let You Go",
+        "artist": "Justin Bieber",
+        "album": "My Worlds",
+        "audio_filepath": "http://192.168.0.156:8000/4Mf6w0cowyBNcu2aoVC9GX.mp3"
+    },
+    {
+        "sequence": 5,
+        "title": "This Christmas",
+        "artist": "Mary J. Blige",
+        "album": "A Mary Christmas",
+        "audio_filepath": "http://192.168.0.156:8000/2a8buvY3ETYzcNNzMDx17H.mp3"
+    },
+    {
+        "sequence": 6,
+        "title": "Bottle It Up",
+        "artist": "Sara Bareilles",
+        "album": "Little Voice",
+        "audio_filepath": "http://192.168.0.156:8000/3kfHdr2sYF2EeWEmBHquVj.mp3"
+    },
+    {
+        "sequence": 7,
+        "title": "Last one (feat.Joosuc)",
+        "artist": "You/Me",
+        "album": "Master`s sun OST Part 8",
+        "audio_filepath": "http://192.168.0.156:8000/0qQrpYn7jdfiwSvbevwW0o.mp3"
+    },
+    {
+        "sequence": 8,
+        "title": "Your Destiny",
+        "artist": "Kevin Levar",
+        "album": "Your Destiny",
+        "audio_filepath": "http://192.168.0.156:8000/6WxqW2asFcea4D4xfIiHTW.mp3"
+    },
+    {
+        "sequence": 9,
+        "title": "Reasons",
+        "artist": "Jillian Jacqueline",
+        "album": "Side A",
+        "audio_filepath": "http://192.168.0.156:8000/5bPiULQ8j6EpEdEXisn7yi.mp3"
+    },
+    {
+        "sequence": 10,
+        "title": "Shameless",
+        "artist": "The Weeknd",
+        "album": "Beauty Behind The Madness",
+        "audio_filepath": "http://192.168.0.156:8000/66UVpCZ5aH3VV3Ic3PBUrP.mp3"
+    },
+    {
+        "sequence": 11,
+        "title": "Love Song",
+        "artist": "KING",
+        "album": "We Are KING",
+        "audio_filepath": "http://192.168.0.156:8000/7xR0fkFtH0551GhxBzyVpE.mp3"
+    },
+    {
+        "sequence": 12,
+        "title": "Put A Label On It",
+        "artist": "Ryan Follese",
+        "album": "Ryan Follese",
+        "audio_filepath": "http://192.168.0.156:8000/7oQ09pJGn75oy9MIvkINWi.mp3"
+    },
+    {
+        "sequence": 13,
+        "title": "Next To You",
+        "artist": "Chris Brown",
+        "album": "F.A.M.E.",
+        "audio_filepath": "http://192.168.0.156:8000/7DVvm94B6KDKtI6wzG4Vvm.mp3"
+    },
+    {
+        "sequence": 14,
+        "title": "Find Me",
+        "artist": "Tyler Carter",
+        "album": "Leave Your Love",
+        "audio_filepath": "http://192.168.0.156:8000/31LEJN0CEvMzEsVqZo4Zl9.mp3"
+    },
+    {
+        "sequence": 15,
+        "title": "Man Bawra",
+        "artist": "Rahat Fateh Ali Khan",
+        "album": "50 Greatest Hits Rahat Fateh Ali Khan",
+        "audio_filepath": "http://192.168.0.156:8000/7FiVh9NnYEgH67oE3jxxmX.mp3"
+    },
+    {
+        "sequence": 16,
+        "title": "Only Human",
+        "artist": "MisterWives",
+        "album": "Connect The Dots",
+        "audio_filepath": "http://192.168.0.156:8000/1bjFRZio15WLDDQy75JY2r.mp3"
+    }
+]

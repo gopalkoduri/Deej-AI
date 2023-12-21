@@ -1,4 +1,4 @@
-/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/test_subset/02C433ZVoi5cPFOSEKKzUX.mp3
-/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/test_subset/2AN4IJNLMy4M27udF8GrsF.mp3
-/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/test_subset/4EFE0Cvf3caqwaM5K3udBR.mp3
-/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/test_subset/6lgCWoyDrs3oSkaF9aMp9C.mp3
+/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/audio/02C433ZVoi5cPFOSEKKzUX.mp3
+/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/audio/2AN4IJNLMy4M27udF8GrsF.mp3
+/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/audio/4EFE0Cvf3caqwaM5K3udBR.mp3
+/home/aditi/Code/tech/playlist-copilot/data/spotify-million-playlists/audio/6lgCWoyDrs3oSkaF9aMp9C.mp3
